@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main_gray: #353535;
+  --main_green: #116808;
+  --main_orange: #b65608;
+  --main_yellow: #b6aa08;
+  --smoke_white: #f5f5f5;
+}
+
+body {
+ -webkit-font-smoothing: antialiased;
+ scroll-behavior: smooth;
+}
+
+.wrapper {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.content {
+  scroll-snap-align: start;
+  position: relative;
+  height: 100vh;
+  padding: 2rem 4rem;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blockquote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+cite {
+  margin-top: 1.5rem;
+  font-size: 2vh;
+  font-weight: 500;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  align-self: end;
+}
+
