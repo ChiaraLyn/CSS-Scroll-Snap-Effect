@@ -44,7 +44,7 @@ Snap.prototype.render = function() {
   content.style.fontWeight = `${this.fontWeight}`;
   content.style.justifyContent = `${this.justifyContent}`;
   
-  //Media query for snapping content
+  // Media query for snapping content
   let isMobile = window.matchMedia("only screen and (max-width: 1024px)");
 
   if (isMobile.matches) {		
